@@ -470,7 +470,7 @@ if __name__ == '__main__':
     batch_size = 16
     weight_decay = 0.01
     lr = 1e-5  # 0.000015
-    num_epochs = 15
+    num_epochs = 30
 
     tokenizer = RobertaTokenizer.from_pretrained(model_path)
 
@@ -631,3 +631,4 @@ if __name__ == '__main__':
 
     with open(f'results/scores/domclp/{target_domain}.txt', 'a') as f:
         f.write('seed: %d, \t f1: %.4f\n' % (seed, best_macro_F1))
+
