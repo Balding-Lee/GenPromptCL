@@ -19,9 +19,25 @@ This is the model architecture of GenPromptCL. There are four parts in our metho
 3. **DMPL Module**: This module randomly shuffles the domain labels in each epoch, thereby misleading the model and making it difficult for it to correctly classify the domain of the text. This encourages the model to focus more on domain-invariant features in the text, ensuring better generalization on downstream tasks.
 4. **PCL Module**: This module assigns pseudo labels to each piece of data, and uses these pseudo labels to implement contrastive learning, thereby enhancing the discriminative power of the model within and between classes.
 
+![framework](src/methodology.jpg)
 
 # Experimental results
 
+- Experimental results on the Amazon dataset:
+
+![Amazon](src/amazon.png)
+
+- Experimental results on the PHEME dataset:
+
+![PHEME](src/PHEME.png)
+
+- Experimental results on the MNLI dataset:
+
+![MNLI](src/MNLI.png)
+
+- Experimental results on the cross datasets:
+
+![cross](src/cross_datasets.png)
 
 # Running GenPromptCL
 
